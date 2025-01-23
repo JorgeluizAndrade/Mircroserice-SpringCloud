@@ -2,6 +2,7 @@ package com.microservice.product_service.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,7 @@ import com.microservice.product_service.service.ProductService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("api/product")
+@RequestMapping("api/products")
 public class ProductController {
 
 	private final ProductService productService;
@@ -39,5 +40,13 @@ public class ProductController {
 
 		return ResponseEntity.status(HttpStatus.CREATED).body(response);
 
+	}
+
+	
+	@GetMapping
+	public ResponseEntity findAllProducts() {
+		var allProducts = productService.allProducts();
+
+		return ResponseEntity.status(HttpStatus.ACCEPTED).body(allProducts);
 	}
 }

@@ -1,5 +1,7 @@
 package com.microservice.product_service.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.microservice.product_service.entity.Product;
@@ -28,5 +30,9 @@ public class ProductService {
 		return product;
 
 	}
+	
+	public List<Product> allProducts() {
+			return this.productRepository.findAll();
+		}
 
 }
