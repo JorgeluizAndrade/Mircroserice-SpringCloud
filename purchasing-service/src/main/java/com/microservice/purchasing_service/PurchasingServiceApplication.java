@@ -1,4 +1,4 @@
-package com.micriservice.purchasing_service;
+package com.microservice.purchasing_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,4 @@ public class PurchasingServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PurchasingServiceApplication.class, args);
 	}
-
 }
