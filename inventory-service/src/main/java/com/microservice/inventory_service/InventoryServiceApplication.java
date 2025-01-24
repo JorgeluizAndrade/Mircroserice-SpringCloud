@@ -8,6 +8,8 @@ import org.springframework.context.annotation.Bean;
 import com.microservice.inventory_service.entity.Inventory;
 import com.microservice.inventory_service.repository.InventoryRepository;
 
+
+
 @SpringBootApplication
 public class InventoryServiceApplication {
 
@@ -15,8 +17,6 @@ public class InventoryServiceApplication {
 		SpringApplication.run(InventoryServiceApplication.class, args);
 	}
 
-	
-	
 	@Bean
 	public CommandLineRunner carregarDados(InventoryRepository inventoryRepository) {
 			
