@@ -1,4 +1,4 @@
-package com.microservice.purchasing_service;
+package com.microservice.purchase_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.microservice.purchasing_service.entity;
+package com.microservice.purchase_service.entity;
 
 import java.math.BigDecimal;
 
