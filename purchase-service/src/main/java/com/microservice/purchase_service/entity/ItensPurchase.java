@@ -25,6 +25,6 @@ public class ItensPurchase {
 	private Long id;
 
 	private String skuCode;
-	private BigDecimal preco;
+	private BigDecimal price;
 	private Integer quantidade;
 }
