@@ -30,6 +30,8 @@ public class PurchaseController {
 	public String dispatchOrder(@RequestBody PurchaseRequest req) {
 		purchaseService.dispatchOrder(req);
 		
+		purchaseService.sendPurchaseNotification("luizj1718@gmail.com", "Purchase successful!");
+		
 		return "Order dispatched successful";
 	}
 	
